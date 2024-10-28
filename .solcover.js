@@ -10,6 +10,9 @@ module.exports = {
     fgrep: '[skip-on-coverage]',
     invert: true,
   },
+  // Reduce instrumentation footprint for performance
+  measureStatementCoverage: false,
+  measureFunctionCoverage: false,
   // Work around stack too deep for coverage
   configureYulOptimizer: true,
   solcOptimizerDetails: {
